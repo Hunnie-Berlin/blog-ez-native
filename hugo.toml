@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'EZ Native English Blog'
+theme = "stack"
+
+[params]
+  favicon = "favicon.ico"
+  description = "EZ Native English with color!"
+  mainSections = ["posts"]
+
+ [params.sidebar]
+  emoji = "👋"
+  subtitle = "Speak naturally, sound native"
+
+  [params.sidebar.avatar]
+    enabled = true
+    src = "/images/avatar02.png"   # 👉 실제 파일은 static/images/avatar.png
+    local = false               # 👉 static 경로 사용 시 반드시 false
+
+    [params.sidebar.profile]
+      enabled = true
+      name = "EZ Native English"
+      
+
+  [params.footer]
+    since = 2025
+    customText = "EZ Native English Blog © All rights reserved."
+
+  [params.search]
+    enabled = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
